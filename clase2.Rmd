@@ -20,7 +20,15 @@ planets_df = data.frame(name,type,diameter,rotation,rings)
 View(planets_df)
 
 
+
+
 ```
+
+prueba test
+```{r}
+
+```
+
 
 
 
