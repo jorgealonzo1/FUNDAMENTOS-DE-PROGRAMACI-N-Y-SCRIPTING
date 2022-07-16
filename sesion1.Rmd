@@ -1,0 +1,56 @@
+
+```{r}
+matrix(1:9,byrow = FALSE, nrow = 3)
+
+
+
+
+```
+
+factor
+```{r}
+sex_vector = c("male","female","female","male","male")
+factor_sex_vector = factor(sex_vector)
+factor_sex_vector
+
+
+sex_vector = c("male","emale","female","male","male")
+factor_sex_vector = factor(sex_vector)
+factor_sex_vector
+
+```
+```{r}
+temperatura_vector = c("high","low","high","low","medium")
+factor_temperatura_vector = factor(temperatura_vector, ordered = TRUE, levels = c("low","medium","high"))
+
+```
+
+
+Factor levels
+```{r}
+survey_vector = c("M", "F", "F", "M","M")
+factor_survey_vector = factor(survey_vector)
+factor_survey_vector
+levels(factor_survey_vector)=c("Famale","Male")
+
+```
+summary
+```{r}
+summary(factor_survey_vector)
+```
+
+order factors 
+```{r}
+male = factor_survey_vector[1]
+female = factor_survey_vector[2]
+male
+
+
+
+
+speed_vector = c("medium","slow","Slow","medium", "fast")
+factor_speed_vector  = factor (speed_vector)
+factor_speed_vector = factor(speed_vector, ordered= TRUE, levels=c("slow", "medium", "fast"))
+
+```
+
