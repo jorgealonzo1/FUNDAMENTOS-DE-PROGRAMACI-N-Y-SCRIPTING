@@ -18,7 +18,7 @@ rings <- c(FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, TRUE)
 
 planets_df = data.frame(name,type,diameter,rotation,rings)
 View(planets_df)
-
+planets_df
 
 
 
