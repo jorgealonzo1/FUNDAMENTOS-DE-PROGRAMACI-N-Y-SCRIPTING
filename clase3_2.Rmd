@@ -1,0 +1,209 @@
+Equatity
+
+```{r}
+"Rchitect" != "rchitect"
+TRUE==FALSE
+-6*14 !=17-101
+TRUE == 1
+
+-6*5 + 2 >= -10+1
+
+"raining" <= "raiging dogs"
+TRUE<FALSE
+
+
+
+
+
+
+
+```
+
+compare vectores
+
+
+
+
+```{r}
+linkedin = c(16,9,13,5,2,17,14)
+facebook = c(17,9,16,5,2,13,14)
+
+linkedin>15
+facebook<=5
+
+linkedin > facebook
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+compare matrices
+```{r}
+views = matrix(c(linkedin,facebook),nrow=2,byrow = TRUE)
+views
+
+views==13
+views ==14
+
+
+```
+& |
+```{r}
+linkedin
+last = tail(linkedin,1)
+
+last>5|last<10
+last>5&last<10
+
+
+
+last>15|last<20
+
+
+
+
+linkedin >10 & facebook <10
+
+```
+
+if
+```{r}
+medium = "linkedin"
+num_views = 18
+
+
+
+if(medium == "linkedin"){
+  print("showing Linkedin Interfaz")
+  
+  
+}
+
+if (num_views>15) {
+  print("you are popular!")
+}
+
+
+if(medium == "linkedin"){
+  print("showing Linkedin Interfaz")
+  
+  
+}else{
+  
+  print("no cumple")
+}
+
+
+
+
+
+
+if (num_views>15) {
+  print("you are popular!")
+} else if (num_views<14){
+  print("Vistas menores de 14")
+} else if (num_views==14){
+  print("Suficiente")
+} else {
+  print("mas vistas")
+}
+
+
+```
+
+
+
+
+
+```{r}
+result = ""
+numer =6
+
+if (numer<10){
+  if(numer<5){
+    result="small"
+  }
+  else{result="smaller"}
+} else if (numer <10){
+  result="medium"
+}else {
+  result="large"
+}
+
+print(result)
+
+
+```
+
+
+while
+
+```{r}
+
+
+
+
+speed = 64
+
+while(speed>30){
+  print("Slow Down")
+  speed = speed-7
+}
+
+speed
+```
+```{r}
+
+while (speed>30) {
+  print(paste("your speed is", speed))
+  if(speed)
+}
+
+
+
+
+```
+```{r}
+speed = 88
+
+while (speed>30) {
+  print(paste("your speed is", speed))
+  
+  if (speed){break}
+
+  if (speed>48){
+    print("slow down !")
+    speed=speed-11
+  }else {
+    print("slow")
+    speed=speed-6
+  }
+}
+```
+
+
+
+```{r}
+i=1
+
+while (condition) {
+  
+  
+  
+  
+}
+
+
+
+
+```
+
