@@ -1,0 +1,91 @@
+
+
+
+
+```{r}
+linkedin = c(16,9,13,5,2,17,14)
+
+for (l in linkedin) {
+  print((l))
+
+  
+}
+```
+```{r}
+i=1
+for (i in i:length(linkedin)) {
+  print(linkedin[i])
+}
+
+
+
+```
+
+loop over a list
+```{r}
+nyc=list(pop=8405837,boroughs=c("manhathan","Bronx","Brooklin", "Queens","state island"),capital=FALSE)
+
+
+
+
+```
+
+
+
+
+
+```{r}
+
+new_hope <- c(460.998,314.4)
+empire_strikes <- c(290.475,247.900)
+return_jedi <- c(309.306,165.8)
+
+box_office  <- c(new_hope, empire_strikes, return_jedi)
+box_office
+
+stars_wars_matrix <- matrix(box_office, byrow = TRUE, nrow=3)
+stars_wars_matrix
+```
+```{r}
+region <- c("US", "non-US")
+titles <- c("A new hope", "The empire strikes back", "Return of the Jedi")
+
+colnames(stars_wars_matrix) <- region
+rownames(stars_wars_matrix) <- titles
+stars_wars_matrix
+
+```
+
+
+
+```{r}
+for (i in 1:nrow(stars_wars_matrix)) {
+  for (j in 1:ncol(stars_wars_matrix)) {
+    print(paste("on row",i,"adn column", j,"the board contains",stars_wars_matrix[i,j]))
+    
+  }
+  
+}
+```
+
+
+```{r}
+for (li in linkedin) {
+  if(li>10){
+    print("popular")
+  }
+  else {print("more visits")}
+  
+  if(li>16){
+    print("ridicolus")
+    break
+  }
+  if (li>5){
+    
+    print("embarrasing")
+  }
+  print(li)
+}
+```
+
+
