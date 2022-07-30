@@ -92,7 +92,74 @@ interpret_all(linkedin)
 ```
 
 
+```{r}
+library(ggplot2)
+mtcars
+qplot(mtcars$wt,mtcars$hp)
+```
 
+familia apply
+
+
+lapply
+
+```{r}
+pioneers = c("gauss:1777","Bayes:1702","pascal:1823", "pearson:1857")
+
+split_match = strsplit(pioneers,split = ":")
+split_match
+
+Split_low = lapply(split_match,tolower)
+
+select_first = function(x){
+  x[2]
+}
+
+names = lapply(Split_low,select_first)
+select_second=function(x){
+  
+  x[2]
+  
+}
+
+```
+lapply y anonymous
+
+```{r}
+
+Split_low
+names = lapply((Split_low, function(x)))
+
+
+```
+
+
+
+```{r}
+vec1=c(3,8,7,6)
+vec2=
+```
+
+
+
+vapply
+```{r}
+basics = function(x){
+  c(min=min(x),mean=mean(x),max=max(x))
+}
+temp
+vapply(temp,basics,numeric(3))
+
+```
+
+matematicas
+
+```{r}
+errors = c(1.9,-2.6,4.0,-9.5,-3.4,)
+
+
+
+```
 
 
 
