@@ -1,5 +1,97 @@
 
 
+funciones
+```{r}
+
+
+length(linkedin)
+head(linkedin)
+class(linkedin)
+tail(linkedin)
+```
+
+
+Funciones
+```{r}
+
+avg_li=mean(linkedin)
+avg_li
+sum(linkedin)
+
+
+
+```
+
+```{r}
+pow_two=function(arg)
+{
+  arg**2
+  
+  
+  
+}
+
+pow_two(2)
+
+sum_abs=function(arg1,arg2){
+  abs(arg1)+abs(arg2)
+}
+  
+
+sum_abs(-2,3)
+
+hello = function()
+
+
+```
+
+
+
+
+```{r}
+interpret =function(num_views) {
+  if (num_views>15){
+    print("popular")
+    return(num_views)
+  }else{
+    print("more visible")
+    return(0)
+  }
+}
+
+interpret(linkedin[2])
+interpret_all = function(views,return_sum=TRUE){
+  count=0
+  for (v in views){
+    count = count + interpret (v)
+  }
+    if (return_sum){
+      return(count)
+      
+      
+    }else {
+      return(NULL)
+    }
+    
+    
+    
+}
+interpret_all(linkedin)
+```
+
+```{r}
+interpret_all(FALSE,linkedin)
+
+
+
+```
+
+
+```{r}
+interpret_all(linkedin)
+```
+
+
 
 
 
