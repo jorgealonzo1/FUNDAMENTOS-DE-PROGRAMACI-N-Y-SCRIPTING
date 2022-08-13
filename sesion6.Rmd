@@ -1,0 +1,71 @@
+
+
+```{r}
+
+gapminder %>%
+  summarize(medianLifeExp=median(lifeExp))
+
+```
+flitrar por 1957 then summarize the median life expectancy    
+```{r}
+
+gapminder %>%
+  filter(year==1957)%>%
+  summarize(medianLifeExp=median(lifeExp))
+
+
+gapminder %>%
+  summarize(medianLifeExp=median(lifeExp), maxGdpPercap=max(gdpPercap))
+
+
+```
+
+
+```{r}
+
+gapminder %>%
+  group_by(year)%>%
+  summarize(medianLifeExp=median(lifeExp),maxGdpPercap=max(gdpPercap))
+
+```
+
+
+```{r}
+
+gapminder %>%
+  filter(year==1957)%>%
+  group_by(continent)%>%
+  summarize(medianLifeExp=median(lifeExp),maxGdpPercap=max(gdpPercap))
+
+
+```
+
+
+```{r}
+gapminder %>%
+ 
+  group_by(continent, year)%>%
+  summarize(medianLifeExp=median(lifeExp),maxGdpPercap=max(gdpPercap))
+```
+
+
+```{r}
+by_year == gapminder%>%
+group_by(year)
+summarize(medianGdpPercap=median(gdpPercap))
+```
+
+
+
+
+```{r}
+oceania_1952 = gapminder%>%
+
+
+```
+
+
+
+
+
+

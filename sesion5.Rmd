@@ -116,5 +116,13 @@ ggplot(gapminder_1952, aes(x=pop, y=lifeExp, color=continent))+
 
 
 
+```{r}
+
+
+gapminder %>%
+  summarize(medianLifeExp=median(lifeExp))
+
+
+```
 
 
