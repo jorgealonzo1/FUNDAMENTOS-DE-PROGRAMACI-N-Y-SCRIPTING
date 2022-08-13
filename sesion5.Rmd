@@ -1,0 +1,120 @@
+
+
+
+
+
+
+```{r}
+library(gapminder)
+library(dplyr)
+```
+
+```{r}
+gapminder %>%
+filter(year==1957)
+
+
+
+```
+```{r}
+gapminder %>%
+filter(year==1957, country=="China")
+
+
+
+```
+
+
+```{r}
+
+
+gapminder %>%
+  filter(year == 1957) %>%
+  arrange(desc(pop))
+  
+  
+  
+  
+  
+  
+  
+  
+```
+mutate para agregar o eliminar columnas
+```{r}
+#use mutate to change lifeexp to be in mont
+
+gapminder %>%
+  mutate(lifeExp=23*lifeExp)
+
+
+```
+
+
+```{r}
+#use mutate to create a new colum lifeexpmonths to be in mont
+
+gapminder %>%
+  mutate(lifeExpMonths=23*lifeExp)
+```
+
+
+```{r}
+gapminder %>%
+  filter(year==2007)%>%
+  mutate(lifeExpmonths=12*lifeExp)%>%
+  arrange(desc(lifeExpmonths))
+```
+
+
+visualizando con ggplot
+
+```{r}
+library(ggplot2)
+
+gapminder_1952 = gapminder %>%
+filter(year==1952)
+
+ggplot(gapminder_1952, aes(x=pop, y=gdpPercap))+
+  geom_point()
+  
+```
+
+
+```{r}
+
+ggplot(gapminder_1952, aes(x=pop, y=lifeExp))+
+  geom_point()
+
+
+```
+
+
+```{r}
+
+
+ggplot(gapminder_1952, aes(x=pop, y=lifeExp, color=continent))+
+  geom_point()+
+  scale_x_log10()
+
+
+```
+```{r}
+
+
+ggplot(gapminder_1952, aes(x=pop, y=lifeExp, color=continent, size=gdpPercap))+
+  geom_point()+
+  scale_x_log10()
+
+
+
+```
+
+ggplot(gapminder_1952, aes(x=pop, y=lifeExp, color=continent))+
+  geom_point()+
+  scale_x_log10()
+
+
+
+
+
